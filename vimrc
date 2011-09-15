@@ -13,7 +13,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:·
+set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+hi NonText ctermfg=7 guifg=gray
 
 " Searching
 set hlsearch
