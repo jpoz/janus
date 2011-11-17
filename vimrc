@@ -81,6 +81,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
+" adding less
+au BufNewFile,BufRead *.less set filetype=less
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
